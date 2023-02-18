@@ -7,7 +7,7 @@ export default function GameNumber(props) {
         <View style={GameStyle.navbar}>
             <Text style={GameStyle.minMax}>{props.min.toString()}</Text>
             <View style={{ width: '50%' }} >
-                <NTextInput setNumber={props.setDummyNumber} />
+                <NTextInput placeholder='Try to know' setNumber={props.setDummyNumber} />
             </View>
             <Text style={GameStyle.minMax}>{props.max.toString()}</Text>
         </View>

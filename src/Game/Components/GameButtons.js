@@ -1,8 +1,5 @@
-import { useState } from "react";
 import { View } from "react-native";
 import NButton from "../../../components/NButton";
-import { router } from "../../../route/router";
-import { routes } from "../../../route/routes";
 import { GameStyle } from "../Style";
 
 export default function NumberAndButtons(props) {
