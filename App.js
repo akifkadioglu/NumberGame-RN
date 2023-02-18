@@ -15,8 +15,10 @@ function App() {
       <View style={styles.container}>
         <NavigationContainer>
           <Stack.Navigator initialRouteName={routes.HOME}>
-            <Stack.Screen name={routes.HOME} component={Home} />
-            <Stack.Screen name={routes.GAME} component={Game} />
+            <Stack.Screen options={{ title: 'Home' }}
+              name={routes.HOME} component={Home} />
+            <Stack.Screen options={{ title: 'Game' }}
+              name={routes.GAME} component={Game} />
           </Stack.Navigator>
         </NavigationContainer>
 
