@@ -6,7 +6,7 @@ export default function Game({ route, navigation }) {
     const { number } = route.params;
     return (
         <View style={GameStyle.container}>
-            <NumberAndButtons />
+            <NumberAndButtons number={number} navigation={{ navigation }} />
         </View >
     )
 }

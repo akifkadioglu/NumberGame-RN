@@ -21,11 +21,4 @@ export const HomeStyle = StyleSheet.create({
         fontWeight: '500',
         marginBottom: 25
     },
-    room: {
-        display: 'flex',
-        flexDirection: "row",
-        justifyContent: 'space-evenly',
-        width: '100%',
-        alignItems: 'center'
-    }
 }) 

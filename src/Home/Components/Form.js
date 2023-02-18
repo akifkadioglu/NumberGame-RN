@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Text, View } from "react-native";
 import NButton from "../../../components/NButton";
 import NTextInput from "../../../components/NTextInput";
@@ -8,12 +8,16 @@ import { HomeStyle } from "../Style";
 
 export default function HomeForm({ navigation }) {
     const [number, setNumber] = useState('')
+
     function onPressHandler() {
+        if (!number) return
         router.push({ navigation }, routes.GAME, {
             number: number
         })
     }
-
+    function componentDidMount() {
+        console.log('kdsjfn')
+    }
     return (
         <View style={HomeStyle.form}>
             <Text style={HomeStyle.formTitle} >Number Game</Text>
