@@ -15,9 +15,7 @@ export default function HomeForm({ navigation }) {
             number: number
         })
     }
-    function componentDidMount() {
-        console.log('kdsjfn')
-    }
+    
     return (
         <View style={HomeStyle.form}>
             <Text style={HomeStyle.formTitle} >Number Game</Text>

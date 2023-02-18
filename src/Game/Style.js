@@ -16,18 +16,18 @@ export const GameStyle = StyleSheet.create({
         padding: 20,
         borderColor: '#ddd'
     },
-    formTitle: {
-        fontSize: 20,
-        fontWeight: '500',
-        marginBottom: 25,
-        textAlign: "center"
-    },
     navbar: {
         display: 'flex',
         justifyContent: "space-evenly",
-        flexDirection: "row"
+        alignItems: "center",
+        flexDirection: "row",
     },
     button: {
         width: 100
+    },
+    minMax: {
+        fontSize: 20,
+        fontWeight: '500',
+        textAlign: "center"
     }
 })
